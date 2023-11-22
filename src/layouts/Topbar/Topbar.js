@@ -22,7 +22,7 @@ const Topbar = () => {
     { id: 3, label: "Menu", link: "/menu" },
     { id: 4, label: "Reservations", link: "/reservations" },
     { id: 5, label: "Order Online", link: "/orders" },
-    { id: 6, label: "Login", link: "/login" }
+    { id: 6, label: "Login", link: "/login" },
   ];
 
   return (
@@ -32,7 +32,7 @@ const Topbar = () => {
       </div>
       <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
         <ul className={`menu-list ${isMenuOpen ? "open" : ""}`}>
-          {menuItems.map(item => (
+          {menuItems.map((item) => (
             <li key={item.id}>
               <a href={item.link} className="link">
                 {item.label}

@@ -13,7 +13,12 @@ const TestimonialCard = ({ author, description, image, rating }) => {
       </div>
 
       <div className="testimonial-card-container">
-        <img className="testimonial-profile-picture" src={image} alt="author" height={50}></img>
+        <img
+          className="testimonial-profile-picture"
+          src={image}
+          alt="author"
+          height={50}
+        ></img>
         <p className="testimonial-card-author">{author}</p>
       </div>
       <p className="testimonial-description">{description}</p>

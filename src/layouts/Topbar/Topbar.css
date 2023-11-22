@@ -52,7 +52,7 @@ ul li a {
     width: -webkit-fill-available;
     margin: 0 auto;
     position: fixed;
-    margin-bottom:96px;
+    margin-bottom: 96px;
   }
   .menu-toggle {
     display: block;

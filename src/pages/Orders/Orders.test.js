@@ -10,7 +10,7 @@ jest.mock("../Sections/UnderConstruction/UnderConstruction", () => {
 describe("Orders component", () => {
   test("renders the UnderConstruction component", () => {
     render(<Orders />);
-    
+
     const underConstructionElement = screen.getByTestId("under-construction");
     expect(underConstructionElement).toBeInTheDocument();
   });

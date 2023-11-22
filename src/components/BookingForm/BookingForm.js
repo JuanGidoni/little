@@ -6,10 +6,10 @@ const BookingForm = ({
   onFormSubmit,
   isFormSubmitted,
   availableTimes,
-  dispatchOnDateChange
+  dispatchOnDateChange,
 }) => {
   const defaultTime = availableTimes[0];
-  
+
   const [formValues, setFormValues] = useState({
     date: "",
     time: defaultTime,
@@ -18,7 +18,7 @@ const BookingForm = ({
   });
 
   const handleInputChange = (e) => {
-    if (e.target.name === 'date') {
+    if (e.target.name === "date") {
       dispatchOnDateChange(e.target.value);
     }
     setFormValues({
@@ -55,11 +55,9 @@ const BookingForm = ({
           onChange={handleInputChange}
           className={isFormSubmitted && !formValues.time ? "error" : ""}
         >
-          {availableTimes.map(time => 
-            <option key={time}>
-              {time}
-            </option>
-          )}
+          {availableTimes.map((time) => (
+            <option key={time}>{time}</option>
+          ))}
         </select>
       </div>
       <div className="reservation-container">

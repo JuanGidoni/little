@@ -15,7 +15,7 @@
 }
 @media screen and (max-width: 767px) {
   .container {
-    height: calc(100vh - 96px );
+    height: calc(100vh - 96px);
     width: 100vw;
     display: flex;
     align-items: center;

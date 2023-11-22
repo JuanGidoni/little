@@ -3,7 +3,7 @@ import "./Button.css";
 
 const Button = ({ title, onClick, type }) => {
   const handleClick = (e) => {
-    if (type !== 'submit') {
+    if (type !== "submit") {
       e.preventDefault();
     }
 
@@ -13,11 +13,7 @@ const Button = ({ title, onClick, type }) => {
   };
 
   return (
-    <button
-      type={type}
-      className="button"
-      onClick={handleClick}
-    >
+    <button type={type} className="button" onClick={handleClick}>
       {title}
     </button>
   );

@@ -9,7 +9,7 @@ const Hero = () => {
   const navigate = useNavigate();
   const onClickReserve = () => {
     navigate(pages.get("reservations").path);
-  }
+  };
 
   return (
     <div className="hero-background">

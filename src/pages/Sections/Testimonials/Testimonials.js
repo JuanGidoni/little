@@ -43,7 +43,6 @@ const Testimonials = () => {
         <div className="testimonials-list">
           {testimonials.map((testimonial) => (
             <TestimonialCard
-            
               key={testimonial.id}
               author={testimonial.author}
               description={testimonial.description}

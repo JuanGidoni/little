@@ -2,8 +2,6 @@ import React from "react";
 import UnderConstruction from "../Sections/UnderConstruction/UnderConstruction";
 
 const About = () => {
-  return (
-    <UnderConstruction />
-  );
+  return <UnderConstruction />;
 };
 export default About;

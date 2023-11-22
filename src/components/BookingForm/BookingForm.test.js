@@ -1,8 +1,8 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import BookingForm from './BookingForm';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import BookingForm from "./BookingForm";
 
-test('renders BookingForm component', () => {
+test("renders BookingForm component", () => {
   const mockOnFormSubmit = jest.fn();
   const mockDispatchOnDateChange = jest.fn();
   const availableTimes = ["12:00", "13:00", "14:00"];
